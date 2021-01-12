@@ -330,8 +330,6 @@ private:
 	uint8_t				_mom_switch_pos[MOM_SWITCH_COUNT] {};
 	uint16_t			_mom_switch_state{0};
 
-	uint64_t			_global_ref_timestamp{0};
-
 	map_projection_reference_s	_hil_local_proj_ref{};
 	float				_hil_local_alt0{0.0f};
 	bool				_hil_local_proj_inited{false};
