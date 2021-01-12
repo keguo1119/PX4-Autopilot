@@ -72,9 +72,9 @@
 #include <uORB/SubscriptionCallback.hpp>
 #include <uORB/topics/battery_status.h>
 #include <uORB/topics/parameter_update.h>
-#include <uORB/topics/differential_pressure.h>
 #include <uORB/topics/distance_sensor.h>
 #include <uORB/topics/sensor_baro.h>
+#include <uORB/topics/sensor_differential_pressure.h>
 #include <uORB/topics/sensor_mag.h>
 #include <uORB/topics/vehicle_gps_position.h>
 
@@ -183,7 +183,7 @@ private:
 	uORB::SubscriptionInterval _parameter_update_sub{ORB_ID(parameter_update), 1_s};
 
 	uORB::SubscriptionCallbackWorkItem _battery_status_sub{this, ORB_ID(battery_status)};
-	uORB::SubscriptionCallbackWorkItem _diff_pressure_sub{this, ORB_ID(differential_pressure)};
+	uORB::SubscriptionCallbackWorkItem _diff_pressure_sub{this, ORB_ID(sensor_differential_pressure)};
 	static constexpr int MAX_INSTANCES = 4;
 	uORB::SubscriptionCallbackWorkItem _distance_sensor_sub[MAX_INSTANCES] {
 		{this, ORB_ID(distance_sensor), 0},

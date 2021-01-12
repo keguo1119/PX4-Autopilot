@@ -49,7 +49,6 @@ set(msg_files
 	collision_report.msg
 	commander_state.msg
 	cpuload.msg
-	differential_pressure.msg
 	distance_sensor.msg
 	ekf2_timestamps.msg
 	ekf_gps_drift.msg
@@ -76,8 +75,8 @@ set(msg_files
 	landing_target_innovations.msg
 	landing_target_pose.msg
 	led_control.msg
-	log_message.msg
 	logger_status.msg
+	log_message.msg
 	manual_control_setpoint.msg
 	manual_control_switches.msg
 	mavlink_log.msg
@@ -115,6 +114,7 @@ set(msg_files
 	sensor_baro.msg
 	sensor_combined.msg
 	sensor_correction.msg
+	sensor_differential_pressure.msg
 	sensor_gps.msg
 	sensor_gyro.msg
 	sensor_gyro_fft.msg
